@@ -34,7 +34,7 @@ function updateAllTabs() {
 		// unmute sites on whitelist and mute sites not on whitelist
 		for (let tab of tabs) {
 			let whitelisted = isWhitelisted(whitelist, urlToHostname(tab.url));
-			updates.push(modifyTab(tab.id, !whitelisted));
+			updates.push(modifyTab(tab.id, whitelisted));
 		}
 
 		return Promise.all(updates);

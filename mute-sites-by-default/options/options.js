@@ -14,12 +14,12 @@ function init() {
 
 	// set localized strings
 	optionsHeading.appendChild(document.createTextNode(browser.i18n.getMessage("optionsHeading")));
-	optionsChangeWhitelistLabel.appendChild(document.createTextNode(browser.i18n.getMessage("optionsChangeWhitelistLabel")));
-	whitelistHeading.appendChild(document.createTextNode(browser.i18n.getMessage("whitelistHeading")));
-	whitelistAddInput.placeholder = browser.i18n.getMessage("whitelistAddInput", "www.youtube.com");
-	whitelistAddButton.appendChild(document.createTextNode(browser.i18n.getMessage("whitelistAddButton")));
-	whitelistTableWebsiteHeader.appendChild(document.createTextNode(browser.i18n.getMessage("whitelistTableWebsiteHeader")));
-	whitelistTableRemoveHeader.appendChild(document.createTextNode(browser.i18n.getMessage("whitelistTableRemoveHeader")));
+	optionsChangeWhitelistLabel.appendChild(document.createTextNode(browser.i18n.getMessage("optionsChangeBlacklistLabel")));
+	whitelistHeading.appendChild(document.createTextNode(browser.i18n.getMessage("blacklistHeading")));
+	whitelistAddInput.placeholder = browser.i18n.getMessage("blacklistAddInput", "www.youtube.com");
+	whitelistAddButton.appendChild(document.createTextNode(browser.i18n.getMessage("blacklistAddButton")));
+	whitelistTableWebsiteHeader.appendChild(document.createTextNode(browser.i18n.getMessage("blacklistTableWebsiteHeader")));
+	whitelistTableRemoveHeader.appendChild(document.createTextNode(browser.i18n.getMessage("blacklistTableRemoveHeader")));
 
 	// initialize options
 	getOptions().then((options) => {
